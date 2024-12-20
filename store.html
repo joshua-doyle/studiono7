@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Welcome to Studio No.7's Online Store Front. With featured items available for purchase online or at our location. Delivery currently not an option.">
+    <meta name="keywords" content="yogamat, waterbottle, essentialoils, diffuser, exerciseball, foamroller, Studio No.7">
+    <title>Studio No.7 | Online Store for pickup at Physical Location</title>
+    
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+    <!-- Navigation Sidebar -->
+    <div id="mySidebar" class="sidebar">
+        <button class="closebtn" onclick="toggleSidebar()">&times;</button>
+        <a href="index.html">Home</a>
+        <a href="store.html">Store</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">About Us</a>
+        <hr class="sidebar-seperator">
+        <a href="contact.html#contact">Contact Us</a>
+        <a href="index.html#map-section">Find Us</a>
+        <a href="services.html#faq">FAQs</a>
+    </div>
+
+    <header>
+        <!-- Website Logo -->
+        <img src="assets/logos/studioseven.png" alt="Studio No.7 Standard Logo with company name" id="header-image">
+        <!-- Navigation Open Button -->
+        <button class="openbtn" onclick="toggleSidebar()">&#9776;</button>
+        <!-- Shopping Cart -->
+        <div class="cart-icon-container">
+            <div class="cart-icon" onclick="toggleCartPanel()">
+                <img src="assets/icons/cart.png" alt="Shopping Cart to bring you to the cart panel for checkout">
+                <span class="cart-count" id="cart-count">0</span>
+            </div>
+        </div>
+        <!-- Home Button -->
+        <button class="home-button" onclick="window.location.href='index.html'">
+            <img src="assets/icons/homebutton.png" alt="Home Button to bring you to the homepage">
+        </button>
+    </header>
+
+    <!-- Shopping Cart Panel Sidebar-->
+    <div id="cartPanel" class="cart-panel" style="display: none;">
+        <button class="closebtn" onclick="toggleCartPanel()">&times;</button>
+        <h2>Your Cart</h2>
+        <ul id="cart-items"></ul>
+        <p>Total: €<span id="cart-total">0</span></p>
+        <button onclick="checkout()">Checkout</button>
+    </div>
+
+    <!-- Welcome Banner -->
+    <section id="page-banner">
+        <div class="overlay">
+            <div class="banner-content">
+                <h2>Welcome to the Studio No.7 Store</h2>
+                <p>All items purchased will be made available for pickup in-store!<br> Don't know where we are? Click the button below!</p>
+                <button onclick="location.href='index.html#map-section'">Find Us Here!</button>
+            </div>
+        </div>
+    </section>
+
+    <hr class="section-separator">
+
+    <!-- Products Section -->
+    <section id="store">
+        <h2>Available Products</h2>
+        <p>Explore our selection of products available at our studio.</p>
+
+        <div class="product-grid">
+
+            <!-- Product 1 -->
+            <div class="product-item">
+                <img src="assets/products/yogamat.png" alt="Yoga Mat for purchase €40">
+                <h3>Yoga Mat</h3>
+                <p>€40.00</p>
+                <button onclick="addToCart('Yoga Mat', 40)">Add to Cart</button>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="product-item">
+                <img src="assets/products/foamroller.png" alt="Foam Roller for purchase €30">
+                <h3>Foam Roller</h3>
+                <p>€30.00</p>
+                <button onclick="addToCart('Foam Roller', 30)">Add to Cart</button>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="product-item">
+                <img src="assets/products/exerciseball.png" alt="Exercise Ball for purchase €24">
+                <h3>Exercise Ball</h3>
+                <p>€24.00</p>
+                <button onclick="addToCart('Exercise Ball', 24)">Add to Cart</button>
+            </div>
+
+            <!-- Product 4 -->
+            <div class="product-item">
+                <img src="assets/products/diffuser.png" alt="Diffuser for purchase €20">
+                <h3>Diffuser</h3>
+                <p>€20.00</p>
+                <button onclick="addToCart('Diffuser', 20)">Add to Cart</button>
+            </div>
+
+            <!-- Product 5 -->
+            <div class="product-item">
+                <img src="assets/products/essentialoils.png" alt="Essential Oils for purchase €15">
+                <h3>Essential Oils</h3>
+                <p>€15.00</p>
+                <button onclick="addToCart('Essential Oils', 15)">Add to Cart</button>
+            </div>
+
+            <!-- Product 6 -->
+            <div class="product-item">
+                <img src="assets/products/waterbottle.png" alt="Water Bottle for purchase €18">
+                <h3>Water Bottle</h3>
+                <p>€18.00</p>
+                <button onclick="addToCart('Water Bottle', 18)">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <hr class="section-separator">
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="assets/logos/studiosvnlogo.png" alt="Studio No.7 Standard Logo" class="footer-logo-image">
+            </div>
+            <!-- Social Media Icons -->
+            <div class="social-media-icons">
+                <p class="social-message">Follow us on our socials!</p>
+                <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+                    <img src="assets/icons/facebook.png" alt="Follow us on Facebook">
+                </a>
+                <a href="https://twitter.com" target="_blank" aria-label="Twitter">
+                    <img src="assets/icons/x.png" alt="Follow us on X - formerly Twitter">
+                </a>
+                <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+                    <img src="assets/icons/instagram.png" alt="Follow us on Instagram">
+                </a>
+            </div>
+            <nav class="footer-nav">
+                <a href="contact.html#contact" class="footer-link">Contact Us</a>
+                <a href="index.html#map-section" class="footer-link">Find Us</a>
+                <a href="services.html#faq" class="footer-link">FAQs</a>
+            </nav>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+
+</body>
+</html>

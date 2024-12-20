@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Welcome to Studio No.7's Services page with all information relating to what we offer. We provide weekly yoga and spin classes for you to book online, along with meditation sessions.'">
+    <meta name="keywords" content="yoga class, spin class, online meditation, meditation, wellness, mindfulness, Studio No.7">
+    <title>Studio No.7 | Services include Classes and Online Guided Meditation</title>
+
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+   	<!-- Navigation Sidebar -->
+    <div id="mySidebar" class="sidebar">
+        <button class="closebtn" onclick="toggleSidebar()">&times;</button>
+        <a href="index.html">Home</a>
+        <a href="store.html">Store</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">About Us</a>
+        <hr class="sidebar-seperator">
+        <a href="contact.html#contact">Contact Us</a>
+        <a href="index.html#map-section">Find Us</a>
+        <a href="services.html#faq">FAQs</a>
+    </div>
+
+    <header>
+        <!-- Website Logo -->
+        <img src="assets/logos/studioseven.png" alt="Studio No.7 Standard Logo with company name" id="header-image">
+        <!-- Navigation Open Button -->
+        <button class="openbtn" onclick="toggleSidebar()">&#9776;</button>
+        <!-- Home Button -->
+        <button class="home-button" onclick="window.location.href='index.html'">
+            <img src="assets/icons/homebutton.png" alt="Home Button to bring you to the homepage">
+        </button>
+    </header>
+
+    <!-- Welcome Banner -->
+    <section class="full-banner" style="background-image: url('assets/pictures/section3.png');">
+        <div class="overlay">
+            <div class="banner-content">
+                <h2>Welcome to the Studio Services</h2>
+                <p>Here you can find the dates and times of our weekly Yoga and Spin Classes! Can't make it to a class? Don't worry our online guided meditation videos get uploaded weekly!</p>
+            </div>
+        </div>
+    </section>
+
+    <hr class="section-separator">
+
+    <!-- Class Schedule + Calendar -->
+    <section id="class-schedule">
+        <h2>Class Schedule</h2>
+        <div id="calendar-container">
+            <table id="class-calendar">
+                <thead>
+                    <tr>
+                        <th>Monday</th>
+                        <th>Tuesday</th>
+                        <th>Wednesday</th>
+                        <th>Thursday</th>
+                        <th>Friday</th>
+                        <th>Saturday</th>
+                        <th>Sunday</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Yoga: 10am<br>Spin: 6pm</td>
+                        <td>Yoga: 12pm</td>
+                        <td>Spin: 5pm</td>
+                        <td>Yoga: 9am<br>Spin: 7pm</td>
+                        <td>Yoga: 6pm</td>
+                        <td>Spin: 10am</td>
+                        <td>Closed</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Class Booking Dropdown -->
+        <form id="class-booking-form">
+            <label for="class-select">Select a class:</label>
+            <select id="class-select" name="class">
+                <option value="" disabled selected>Select a class</option>
+                <option value="yoga">Monday - Yoga</option>
+                <option value="yoga">Tuesday - Yoga</option>
+                <option value="yoga">Thursday - Yoga</option>
+                <option value="yoga">Friday - Yoga</option>
+                <option value="spin">Monday - Spin</option>
+                <option value="spin">Wednesday - Spin</option>
+                <option value="spin">Thursday - Spin</option>
+                <option value="spin">Saturday - Spin</option>
+            </select>
+            <br><br>
+
+            <!-- User's Name-->
+            <label for="user-name">Your Name:</label>
+            <input type="text" id="user-name" name="name" placeholder="Enter your name" required>
+            <br><br>
+
+            <!-- Submit Button -->
+            <button type="submit">Submit</button>
+            <button onclick="location.href='index.html#map-section'">Find Us Here!</button>
+        </form>
+
+        <!-- Confirmation for Booking -->
+        <div id="booking-confirmation" style="display: none; margin-top: 10px;"></div>
+    </section>
+
+    <hr class="section-separator">
+
+    <!-- Guided Mediatation -->
+    <section id="guided-meditation">
+        <h2>Online Guided Meditation Experience</h2>
+        <p>The following videos are curated for guided meditation and mindfulness practices.</p>
+        <div class="video-container">
+
+            <!-- First Video -->
+            <div class="video-item">
+                <iframe src="https://www.youtube.com/embed/vj0JDwQLof4" 
+                allowfullscreen></iframe>
+            </div>
+
+            <!-- Second Video -->
+            <div class="video-item">
+                <iframe src="https://www.youtube.com/embed/ZToicYcHIOU" 
+                allowfullscreen></iframe>
+            </div>
+        </div>
+    </section>
+
+    <hr class="section-separator">
+
+    <!-- FAQs Section -->
+    <section id="faq">
+        <h2>Frequently Asked Questions</h2>
+        <div class="accordion-container">
+        <!-- FAQs Questions + Answers -->
+            <div class="accordion-item">
+                <button class="accordion-title">What is Studio No.7?</button>
+                <div class="accordion-content">
+                    <p>Studio No.7 is a wellness center offering yoga, meditation, and mindfulness resources.</p>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <button class="accordion-title">What services do you offer?</button>
+                <div class="accordion-content">
+                    <p>We provide yoga classes, guided meditations, and a store for wellness products.</p>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <button class="accordion-title">How do I book a class?</button>
+                <div class="accordion-content">
+                    <p>You can book a class online through our website or visit us at our studio.</p>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <button class="accordion-title">Where are you located?</button>
+                <div class="accordion-content">
+                    <p>We are located in Dublin City. Visit our <a href="#map-section">map section</a> for details.</p>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <button class="accordion-title">Do you sell yoga equipment?</button>
+                <div class="accordion-content">
+                    <p>Yes, we offer yoga mats, cushions, essential oils, and more in our <a href="store.html">store</a>.</p>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <button class="accordion-title">How can I contact you?</button>
+                <div class="accordion-content">
+                    <p>You can call us at <a href="tel:+1234567890">+1 234 567 890</a> or email us at <a href="mailto:info@studiosvn.com">info@studiosvn.com</a>.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="assets/logos/studiosvnlogo.png" alt="Studio No.7 Standard Logo" class="footer-logo-image">
+            </div>
+            <!-- Social Media Icons -->
+            <div class="social-media-icons">
+                <p class="social-message">Follow us on our socials!</p>
+                <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+                    <img src="assets/icons/facebook.png" alt="Follow us on Facebook">
+                </a>
+                <a href="https://twitter.com" target="_blank" aria-label="Twitter">
+                    <img src="assets/icons/x.png" alt="Follow us on X - formerly Twitter">
+                </a>
+                <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+                    <img src="assets/icons/instagram.png" alt="Follow us on Instagram">
+                </a>
+            </div>
+            <nav class="footer-nav">
+                <a href="contact.html#contact" class="footer-link">Contact Us</a>
+                <a href="index.html#map-section" class="footer-link">Find Us</a>
+                <a href="services.html#faq" class="footer-link">FAQs</a>
+            </nav>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Welcome to Studio No.7 Dublin's No.1 Yoga & Spin class! Your gateway to wellness with yoga & spin. Visit our site weekly for online meditation resources to try at home.">
+    <meta name="keywords" content="yoga, spin, meditation, wellness, mindfulness, map, Studio No.7">
+    <title>Studio No.7 | Best Yoga, Spin & Meditation classes in Dublin</title>
+
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css">
+</head>
+
+<body>
+    <!-- Navigation Sidebar -->
+    <div id="mySidebar" class="sidebar">
+        <button class="closebtn" onclick="toggleSidebar()">&times;</button>
+        <a href="index.html">Home</a>
+        <a href="store.html">Store</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">About Us</a>
+        <hr class="sidebar-seperator">
+        <a href="contact.html#contact">Contact Us</a>
+        <a href="index.html#map-section">Find Us</a>
+        <a href="services.html#faq">FAQs</a>
+    </div>
+
+    <header>
+        <!-- Website Logo -->
+        <img src="assets/logos/studioseven.png" alt="Studio No.7 Standard Logo with company name" id="header-image">
+        <!-- Navigation Open Button -->
+        <button class="openbtn" onclick="toggleSidebar()">&#9776;</button>
+        <!-- Home Button -->
+        <button class="home-button" onclick="window.location.href='index.html'">
+            <img src="assets/icons/homebutton.png" alt="Home Button to bring you to the homepage">
+        </button>
+    </header>
+
+    <!-- Section 1 -->
+    <section class="full-banner" style="background-image: url('assets/pictures/section1.png');">
+        <div class="overlay">
+            <div class="text-left">
+                <h1>Welcome to Studio No.7</h1>
+                <p>Your journey to wellness starts here.</p>
+            </div>
+            <div class="button-right">
+                <button onclick="location.href='contact.html'">Learn More</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 2 -->
+    <section class="full-banner" style="background-image: url('assets/pictures/section2.png');">
+        <div class="overlay">
+            <div class="button-left">
+                <button onclick="location.href='store.html'">Shop Now</button>
+            </div>
+            <div class="text-right">
+                <h1>Visit Our Store</h1>
+                <p>Discover curated wellness products.</p>
+            </div>
+        </div>
+    </section>
+
+    <hr class="section-separator">
+
+    <!-- Slider Sections -->
+    <div class="slideshow-container">
+        <!-- Slider 1 -->
+        <div class="Slider">
+            <section class="full-banner" style="background-image: url('assets/pictures/section3.png');">
+                <div class="overlay">
+                    <div class="text-left">
+                        <h2>Explore Our Classes</h2>
+                        <p>Join our guided yoga and meditation sessions.</p>
+                    </div>
+                    <div class="button-right">
+                        <button onclick="location.href='services.html#class-schedule'">Explore Now</button>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <!-- Slider 2 -->
+        <div class="Slider">
+            <section class="full-banner" style="background-image: url('assets/pictures/section4.png');">
+                <div class="overlay">
+                    <div class="button-left">
+                        <button onclick="location.href='services.html#guided-meditation'">Get Started</button>
+                    </div>
+                    <div class="text-right">
+                        <h2>Meditation Resources</h2>
+                        <p>Enhance your mindfulness with guided sessions.</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <!-- Slider 3 -->
+        <div class="Slider">
+            <section class="full-banner" style="background-image: url('assets/pictures/section5.png');">
+                <div class="overlay">
+                    <div class="text-left">
+                        <h2>Meet The Team</h2>
+                        <p>Reach out to learn more about our offerings.</p>
+                    </div>
+                    <div class="button-right">
+                        <button onclick="location.href='contact.html#team-info'">Meet Us</button>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Slider Navigation -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+
+    <!-- Slider Dot Navigation -->
+    <div class="dot-container">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+
+    <hr class="section-separator">
+    
+    <!-- Map APIs -->
+    <section id="map-section">
+        <h2>Find Us on the Map!</h2>
+        <div id="map"></div>
+    </section>
+
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="assets/logos/studiosvnlogo.png" alt="Studio No.7 Standard Logo" class="footer-logo-image">
+            </div>
+            <!-- Social Media Icons -->
+            <div class="social-media-icons">
+                <p class="social-message">Follow us on our socials!</p>
+                <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+                    <img src="assets/icons/facebook.png" alt="Follow us on Facebook">
+                </a>
+                <a href="https://twitter.com" target="_blank" aria-label="Twitter">
+                    <img src="assets/icons/x.png" alt="Follow us on X - formerly Twitter">
+                </a>
+                <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+                    <img src="assets/icons/instagram.png" alt="Follow us on Instagram">
+                </a>
+            </div>
+            <nav class="footer-nav">
+                <a href="contact.html#contact" class="footer-link">Contact Us</a>
+                <a href="index.html#map-section" class="footer-link">Find Us</a>
+                <a href="services.html#faq" class="footer-link">FAQs</a>
+            </nav>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Welcome to Studio No.7's contact page here you can learn more about our company's values and our current team! If you have any questions feel free to contact us using the form!">
+    <meta name="keywords" content="values, team, contact form, yoga, spin, Studio No.7">
+    <title>Studio No.7 | Our Values, Meet the Team, Contact Us</title>
+
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+    <!-- Navigation Sidebar -->
+    <div id="mySidebar" class="sidebar">
+        <button class="closebtn" onclick="toggleSidebar()">&times;</button>
+        <a href="index.html">Home</a>
+        <a href="store.html">Store</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">About Us</a>
+        <hr class="sidebar-seperator">
+        <a href="contact.html#contact">Contact Us</a>
+        <a href="index.html#map-section">Find Us</a>
+        <a href="services.html#faq">FAQs</a>
+    </div>
+
+    <header>
+        <!-- Website Logo -->
+        <img src="assets/logos/studioseven.png" alt="Studio No.7 Standard Logo with company name" id="header-image">
+        <!-- Navigation Open Button -->
+        <button class="openbtn" onclick="toggleSidebar()">&#9776;</button>
+        <!-- Home Button -->
+        <button class="home-button" onclick="window.location.href='index.html'">
+            <img src="assets/icons/homebutton.png" alt="Home Button to bring you to the homepage">
+        </button>
+    </header>
+
+    <!-- Our Values Intro -->
+    <section id="our-values">
+        <div class="values-container">
+            <div class="values-text">
+                <h2>Our Values</h2>
+                <p>Our values guide everything we do. They set the expectations for how we interact with each other, serve our clients, and strive for excellence every day.</p>
+            </div>
+            <!-- Values Image -->
+            <div class="yogaimage">
+                <img src="assets/pictures/section5.png" alt="Yoga Class Picture symbolising decication to the company values">
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Values Icons -->
+	   <div class="values-image">
+	       <img src="assets/pictures/values.png" alt="Our Values: Sustainability, Integrity, Collaboration, Vitality, Community">
+        </div>
+
+    <hr class="section-separator">
+
+    <!-- Team Memebers -->
+    <section id="team-info">
+        <h2>Meet The Team!</h2>
+        <div class="team-container">
+
+            <!-- Team Member 1 -->
+            <div class="team-member">
+                <img src="assets/people/carolinacole.png" alt="Carolina Cole Headshot: Owner of Studio No.7">
+                <h3>Carolina Cole</h3>
+                <h4>Studio No.7 Owner</h4>
+                <p>📞<a href="tel:+1234567890">+1 234 567 890</a></p>
+                <p>✉️<a href="mailto:carolinacole@studiosvn.com">carolinacole@studiosvn.com</a></p>
+            </div>
+
+            <!-- Team Member 2 -->
+            <div class="team-member">
+                <img src="assets/people/ryanfoster.png" alt="Ryan Foster Headshot: Head Instructor - Spin Classes">
+                <h3>Ryan Foster</h3>
+                <h4>Head Instructor: Spin</h4>
+                <p>📞<a href="tel:+1987654321">+1 987 654 321</a></p>
+                <p>✉️<a href="mailto:ryanfoster@studiosvn.com">ryanfoster@studiosvn.com</a></p>
+            </div>
+
+            <!-- Team Member 3 -->
+            <div class="team-member">
+                <img src="assets/people/laurenreed.png" alt="Lauren Reed Headshot: Head Instructor - Yoga Classes">
+                <h3>Lauren Reed</h3>
+                <h4>Head Instructor: Yoga</h4>
+                <p>📞<a href="tel:+1122334455">+1 122 334 455</a></p>
+                <p>✉️<a href="mailto:laurenreed@studiosvn.com">laurenreed@studiosvn.com</a></p>
+            </div>
+        </div>
+    </section>
+
+    <hr class="section-separator">
+
+    <!-- Contact Form -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Have questions or feedback? Fill out the form below, and we'll get back to you!</p>
+
+        <form id="contactForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Your Email" required>
+
+            <label for="subject">Subject:</label>
+            <input type="text" id="subject" name="subject" placeholder="Subject" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="assets/logos/studiosvnlogo.png" alt="Studio No.7 Standard Logo" class="footer-logo-image">
+            </div>
+            <!-- Social Media Icons -->
+            <div class="social-media-icons">
+                <p class="social-message">Follow us on our socials!</p>
+                <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+                    <img src="assets/icons/facebook.png" alt="Follow us on Facebook">
+                </a>
+                <a href="https://twitter.com" target="_blank" aria-label="Twitter">
+                    <img src="assets/icons/x.png" alt="Follow us on X - formerly Twitter">
+                </a>
+                <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+                    <img src="assets/icons/instagram.png" alt="Follow us on Instagram">
+                </a>
+            </div>
+            <nav class="footer-nav">
+                <a href="contact.html#contact" class="footer-link">Contact Us</a>
+                <a href="index.html#map-section" class="footer-link">Find Us</a>
+                <a href="services.html#faq" class="footer-link">FAQs</a>
+            </nav>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+
+</body>
+</html>
